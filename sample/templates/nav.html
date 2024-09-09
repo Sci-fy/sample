@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default shadow position-fixed w-100 t-0" style="background-color: #fafafa;">
+    <div class="container">
+        <a href="{% url 'home' %}" class="text-decoration-none">
+         {% load static%}
+          <img src="{% static 'logo.png' %}"  alt="" class="center " style="width:45px; height: 45px;;">
+        </a>
+        <div class="float-right text-decoration-none">
+            <a href="{% url 'home' %}" class=" text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 177.1 177.1"> <defs> <style type="text/css">  .fil0 {fill:#FFFFFF} .fil1 {fill:#011627;fill-rule:nonzero}  </style> </defs> <g id="Camada_x0020_1"> <metadata id="CorelCorpID_0Corel-Layer"/> <polygon class="fil0" points="177.1,177.1 -0,177.1 -0,0 177.1,0 "/> <path class="fil1" d="M51.45 124.09l25.25 0 0 -17.9c0,-3.26 1.33,-6.22 3.48,-8.37 2.15,-2.15 5.11,-3.48 8.36,-3.48 3.26,0 6.22,1.33 8.37,3.48 2.15,2.15 3.48,5.11 3.48,8.37l0 17.9 25.25 0 0 -34.67 -37.77 -35.78 -36.42 35.76 0 34.68zm26.89 3.28l-28.53 0c-0.91,0 -1.64,-0.73 -1.64,-1.64l0 -37.01 0.01 0c0,-0.42 0.16,-0.85 0.49,-1.17l38.02 -37.33c0.62,-0.64 1.65,-0.66 2.3,-0.04l39.34 37.27c0.37,0.3 0.6,0.76 0.6,1.27l0 37.01c0,0.91 -0.73,1.64 -1.64,1.64l-28.53 0c-0.91,0 -1.64,-0.73 -1.64,-1.64l0 -19.54c0,-2.35 -0.96,-4.49 -2.52,-6.05 -1.55,-1.55 -3.69,-2.52 -6.05,-2.52 -2.35,0 -4.49,0.96 -6.05,2.52 -1.55,1.55 -2.52,3.69 -2.52,6.05l0 19.54c0,0.91 -0.74,1.64 -1.64,1.64z"/> </g> </svg>
+            </a>
+            <a href="{% url 'search' %}" class=" text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height50="50" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 177.1 177.1"> <defs> <style type="text/css">  .fil0 {fill:#FFFFFF} .fil1 {fill:#011627;fill-rule:nonzero}  </style> </defs> <g id="Camada_x0020_1"> <metadata id="CorelCorpID_0Corel-Layer"/> <polygon class="fil0" points="177.1,177.1 -0,177.1 -0,0 177.1,0 "/> <path class="fil1" d="M86.2 50.11c9.97,0 18.99,4.04 25.52,10.57 6.53,6.53 10.57,15.55 10.57,25.52 0,9.38 -3.58,17.92 -9.44,24.34l13.65 13.65c0.64,0.64 0.64,1.68 0,2.32 -0.64,0.64 -1.68,0.64 -2.32,0l-13.65 -13.65c-6.42,5.86 -14.96,9.44 -24.34,9.44 -9.97,0 -18.99,-4.04 -25.52,-10.57 -6.53,-6.53 -10.57,-15.56 -10.57,-25.52 0,-9.97 4.04,-18.99 10.57,-25.52 6.53,-6.53 15.56,-10.57 25.52,-10.57zm23.2 12.89c-5.94,-5.94 -14.14,-9.61 -23.2,-9.61 -9.06,0 -17.27,3.67 -23.2,9.61 -5.94,5.94 -9.61,14.14 -9.61,23.2 0,9.06 3.67,17.27 9.61,23.2 5.94,5.94 14.14,9.61 23.2,9.61 9.06,0 17.27,-3.67 23.2,-9.61 5.94,-5.94 9.61,-14.14 9.61,-23.2 0,-9.06 -3.67,-17.26 -9.61,-23.2z"/> </g> </svg>
+            </a>
+            <a href="{% url 'new-post' %}" class="text-decoration-none" style="font-weight: bolder;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1"  viewBox="0 0 184.23 184.23"> <defs> <style type="text/css">  .fil0 {fill:#FFFFFF} .fil1 {fill:#011627;fill-rule:nonzero}  </style> </defs> <g id="Camada_x0020_1"> <metadata id="CorelCorpID_0Corel-Layer"/> <polygon class="fil0" points="-0,184.23 184.23,184.23 184.23,0 -0,0 "/> <path class="fil1" d="M68.24 50.11l47.76 0c4.99,0 9.52,2.04 12.8,5.32 3.28,3.28 5.32,7.82 5.32,12.8l0 47.76c0,4.99 -2.04,9.52 -5.32,12.8 -3.28,3.28 -7.82,5.32 -12.8,5.32l-47.76 0c-4.99,0 -9.52,-2.04 -12.8,-5.32 -3.28,-3.28 -5.32,-7.82 -5.32,-12.8l0 -47.76c0,-4.99 2.04,-9.52 5.32,-12.8 3.28,-3.28 7.82,-5.32 12.8,-5.32zm9.81 43.71c-0.94,0 -1.71,-0.76 -1.71,-1.71 0,-0.94 0.76,-1.71 1.71,-1.71l12.37 0 0 -12.37c0,-0.94 0.76,-1.71 1.71,-1.71 0.94,0 1.71,0.76 1.71,1.71l0 12.37 12.37 0c0.94,0 1.71,0.76 1.71,1.71 0,0.94 -0.76,1.71 -1.71,1.71l-12.37 0 0 12.37c0,0.94 -0.76,1.71 -1.71,1.71 -0.94,0 -1.71,-0.76 -1.71,-1.71l0 -12.37 -12.37 0zm37.95 -40.3l-47.76 0c-4.04,0 -7.72,1.66 -10.39,4.32 -2.67,2.67 -4.32,6.34 -4.32,10.39l0 47.76c0,4.04 1.66,7.72 4.32,10.39 2.67,2.67 6.35,4.32 10.39,4.32l47.76 0c4.04,0 7.72,-1.66 10.39,-4.32 2.67,-2.67 4.32,-6.35 4.32,-10.39l0 -47.76c0,-4.05 -1.66,-7.72 -4.32,-10.39 -2.67,-2.67 -6.35,-4.32 -10.39,-4.32z"/> </g> </svg>
+            </a>
+            {% if request.user.is_authenticated %}
+                <a href="{% url 'user_profile' %}" class="text-decoration-none pl-2">
+                    <img src="{{ user.profile.image.url }}"  alt="" class="img-circle " style="width:35px; height: 35px; border-radius: 50%;">
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>

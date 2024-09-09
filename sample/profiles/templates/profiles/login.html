@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-2 p-3">
+    {% if form.errors %}
+        {% for key, value in form.errors.items %}
+            <div class="alert alert-danger">
+                {{ value }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="container border border-lightgrey justify-content-md-center p-3 pb-2">
+         {% load static %}
+        <img src="{% static 'logo.png' %}"  alt="" class = "center" style="width:45px; height: 85px;">
+        <h4 class="mb-2 text-muted text-center">Login to your account</h4>
+
+        <form method="post" class="mt-2">
+            {% csrf_token %}
+            {% for field in form %}
+                {{ field }}
+            {% endfor %}
+            <button class="btn btn-primary w-100 font-weight-bold" type="submit">Login</button>
+        </form>
+    </div>
+    <div class="container border border-lightgrey justify-content-md-center p-3 text-center mt-2">
+        Do not have an account <a href="{% url 'register' %}" class="font-weight-bold">Sign up</a> <br>
+        <a href="{% url 'reset_password' %}" class="font-weight-bold" style="color: #007bff;">Reset Password</a>
+    </div>
+</div>
+
+{% endblock %}
